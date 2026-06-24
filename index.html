@@ -330,7 +330,7 @@
     <div class="ba-panel ba-after" id="baAfter"><div class="ba-tag a">After · DnT</div><div class="mock"><div class="big">Where the<br>night begins</div><div class="small">cinematic · felt · remembered</div></div></div>
     <div class="ba-handle" id="baHandle"><div class="ba-grip">⇄</div></div>
   </div>
-  <p class="ba-cap">A mock-up of the gap. Your real before/after goes here once we shoot it.</p>
+  <p class="ba-cap">A taste of the difference. See real work → <a class="accent" href="https://instagram.com/ethanbairns" target="_blank" rel="noopener" style="text-decoration:underline">@ethanbairns</a></p>
 </div></section>
 
 <section class="stats"><div class="wrap sec">
@@ -416,7 +416,7 @@
   <div class="reveal">
     <div class="sec-label">Dan n' Than</div>
     <h2 style="margin-bottom:24px">Two people. One obsession: your story.</h2>
-    <p>DnT Media comes from "Dan n' Than" — <span class="name">Danna Hmidan</span> and <span class="name">Ethan Bairnsfather</span>. Two New Orleans–based founders who came up in competition and sales, and got obsessed with one thing: telling stories better than the feed does.</p>
+    <p>DnT Media comes from "Dan n' Than" — <a class="name" href="https://instagram.com/danna_hmidan" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--gold)">Danna Hmidan</a> and <a class="name" href="https://instagram.com/ethanbairns" target="_blank" rel="noopener" style="text-decoration:underline;text-decoration-color:var(--gold)">Ethan Bairnsfather</a>. Two New Orleans–based founders who came up in competition and sales, and got obsessed with one thing: telling stories better than the feed does.</p>
     <p><span class="name">Ethan</span> played Division I football at Nicholls State, did field marketing with Monster Energy, and now sells in healthcare — so he knows pressure, performance, and how to make people care. <span class="name">Danna</span> is a two-time #1 national sales performer who's led a studio floor and sold marketing to local businesses door to door — she knows exactly what makes a local brand grow and a customer say yes.</p>
     <p>We're not an agency. We're not a freelancer with a camera. We're two people who treat your story like it matters — because it does.</p>
     <div class="creed">
@@ -507,9 +507,10 @@
     <div class="sec-label">Contact</div>
     <h2>Let's build something worth remembering.</h2>
     <p class="lead">Tell us a little about you. We'll get back within 24 hours — and we'll be honest about whether we're the right fit.</p>
+    <p style="margin-top:14px;font-size:15px;color:var(--muted)">Prefer to skip the form? DM us — <a class="accent" href="https://instagram.com/ethanbairns" target="_blank" rel="noopener" style="text-decoration:underline">@ethanbairns</a> &amp; <a class="accent" href="https://instagram.com/danna_hmidan" target="_blank" rel="noopener" style="text-decoration:underline">@danna_hmidan</a></p>
   </div>
-  <!-- TO GO LIVE: replace YOUR_FORM_ID below with your Formspree ID (formspree.io → New form). The fields are already named and ready. -->
-  <form class="form-grid reveal" id="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="if(this.action.includes('YOUR_FORM_ID')){event.preventDefault();this.querySelector('#sent').style.display='block';}">
+  <!-- Working lead capture via mailto (no backend needed). UPGRADE for instant email + records: create a Formspree form, then set action="https://formspree.io/f/YOUR_ID" method="POST" and delete the onsubmit. Change the email in sendLead() to a business address when you have one. -->
+  <form class="form-grid reveal" id="form" onsubmit="event.preventDefault();sendLead(this);">
     <div class="field"><label>Your name</label><input name="name" required placeholder="Jordan Smith"></div>
     <div class="field"><label>Business / brand / handle</label><input name="business" placeholder="@yourbrand"></div>
     <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@email.com"></div>
@@ -520,7 +521,7 @@
     <div class="field full">
       <button type="submit" class="btn" style="width:100%;padding:16px" data-h>Send it →</button>
       <p class="form-note">No spam, no pressure. Just a real conversation.</p>
-      <p id="sent" style="display:none;color:var(--gold-dark);font-weight:600;margin-top:10px">Got it — we'll be in touch within 24 hours. 🎬 <span style="color:var(--muted);font-weight:400">(Preview mode — add your Formspree ID to start receiving real submissions.)</span></p>
+      <p id="sent" style="display:none;color:var(--gold-dark);font-weight:600;margin-top:10px">Opening your email so you can hit send — or just DM us on Instagram. We reply within 24 hours. 🎬</p>
     </div>
   </form>
 </div></section>
@@ -530,7 +531,8 @@
     <a href="#top" class="logo" data-h>D<span class="accent">n</span>T<svg viewBox="0 0 100 130" width="13" height="17" fill="#bf9b30" style="vertical-align:-2px;margin:0 7px"><path d="M50 6 C46 22 46 36 50 50 C54 36 54 22 50 6 Z M50 44 C40 32 23 27 17 38 C13 46 22 57 37 54 C46 52 50 50 50 44 Z M50 44 C60 32 77 27 83 38 C87 46 78 57 63 54 C54 52 50 50 50 44 Z M30 55 C42 60 58 60 70 55 C70 62 67 67 62 69 L38 69 C33 67 30 62 30 55 Z M42 67 C42 85 38 101 50 122 C62 101 58 85 58 67 C54 71 46 71 42 67 Z"/></svg><span style="font-size:14px;color:var(--muted)">MEDIA</span></a>
     <div class="foot-links"><a href="#work" data-h>Work</a><a href="#build" data-h>Build</a><a href="#founders" data-h>About</a><a href="#contact" data-h>Contact</a></div>
   </div>
-  <p class="copyright">© 2026 DnT Media — "Dan n' Than." Stories worth remembering. · <span style="color:var(--gold)">⚜&#xFE0E;</span> New Orleans, LA · @dntmedia</p>
+  <p style="text-align:center;margin-top:30px;font-size:12.5px;letter-spacing:1px;text-transform:uppercase"><a href="https://instagram.com/ethanbairns" target="_blank" rel="noopener" style="color:#cfc7b6">Ethan · @ethanbairns</a> &nbsp;·&nbsp; <a href="https://instagram.com/danna_hmidan" target="_blank" rel="noopener" style="color:#cfc7b6">Danna · @danna_hmidan</a></p>
+  <p class="copyright">© 2026 DnT Media — "Dan n' Than." Stories worth remembering. · <span style="color:var(--gold)">⚜&#xFE0E;</span> New Orleans, LA</p>
 </div></footer>
 
 <script>
@@ -595,6 +597,14 @@ document.querySelectorAll('.acc-q').forEach(q=>q.addEventListener('click',()=>{c
  document.querySelectorAll('.acc-item').forEach(i=>{i.classList.remove('open');i.querySelector('.acc-a').style.maxHeight=null});
  if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px'}
 }));
+
+// LEAD CAPTURE — opens a pre-filled email (works with no backend). Upgrade to Formspree anytime.
+function sendLead(f){
+ const v=n=>{const el=f.querySelector('[name="'+n+'"]');return el?el.value:''};
+ const body='Name: '+v('name')+'\nBusiness/handle: '+v('business')+'\nEmail: '+v('email')+'\nPhone: '+v('phone')+'\nType: '+v('type')+'\nBudget: '+v('budget')+'\n\nWhat\'s got them reaching out:\n'+v('message');
+ window.location.href='mailto:bairnsethan@gmail.com?subject='+encodeURIComponent('New DnT Media lead — '+(v('name')||'website'))+'&body='+encodeURIComponent(body);
+ document.getElementById('sent').style.display='block';
+}
 </script>
 </body>
 </html>
